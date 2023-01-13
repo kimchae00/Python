@@ -1,10 +1,6 @@
 N, X = map(int, input().split())
+A = list(map(int, input().split()))
 
 for i in range(N):
-    A = list(int, input().split())
-
-def isSmallerThanX(x):
-    return x<X
-
-
-
+    if A[i] < X:
+        print(A[i], end=" ")
